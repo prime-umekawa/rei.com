@@ -1,6 +1,6 @@
 import { createClient } from 'microcms-js-sdk';
 
 export const client = createClient({
-  serviceDomain: 'alt-prime',
-  apiKey: 'BVv6lAZIy7EzZ7S4feOvBX82K9EaGlQtC5VJ',
+  serviceDomain: 'np7b0psgm8',
+  apiKey: "EUXbRhZFgWerbCJDZxo4w1aGMY5wlo9rM3Dr",
 });

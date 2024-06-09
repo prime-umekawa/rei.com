@@ -1,13 +1,11 @@
 import { Routes } from '@/lib/data/routes';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineSchedule } from 'react-icons/ai';
 
 import { AiOutlineHome } from 'react-icons/ai';
 import { MdOutlineArticle } from 'react-icons/md';
 
 import { useState } from 'react';
-import { CiLogin } from 'react-icons/ci';
 
 interface HeaderProps {
   loginFlag: boolean;
@@ -94,9 +92,6 @@ const Header: React.FC<HeaderProps> = ({ loginFlag }) => {
                       </Link>
 
                       <div className="flex px-3 py-2">
-                        <Link href={Routes.INDEX.url}>
-                          <CiLogin />
-                        </Link>
                       </div>
 
                       {/* ログアウトボタン */}
@@ -163,22 +158,14 @@ const MenuList: React.FC<MenuListProps> = ({ className }) => {
           HOME
         </Link>
       </li>
-      <li className={className}>
-        <Link
-          href={Routes.GoogleForm.url}
-          className="flex h-12 w-full items-center border-2 bg-gray-100 lg:bg-white text-gray-800 transition duration-150 ease-in-out hover:underline lg:hover:no-underline focus:border-gray-800 focus:text-gray-400 focus:underline lg:focus:no-underline lg:h-full lg:w-auto lg:border-0 lg:border-gray-200  py-2 px-4 rounded-lg"
-        >
-          <AiOutlineSchedule className="mr-2" />
-          体験会に参加
-        </Link>
-      </li>
+
       <li className={className}>
         <Link
           href={Routes.BlogPage.url}
           className="flex h-12 w-full items-center border-2 bg-gray-100 lg:bg-white text-gray-800 transition duration-150 ease-in-out hover:underline lg:hover:no-underline focus:border-gray-800 focus:text-gray-400 focus:underline lg:focus:no-underline lg:h-full lg:w-auto lg:border-0 lg:border-gray-200  py-2 px-4 rounded-lg"
         >
           <MdOutlineArticle className="mr-2" />
-          エンジニアブログ
+          {Routes.BlogPage.title}
         </Link>
       </li>
       {/* 他のメニュー項目を追加 */}

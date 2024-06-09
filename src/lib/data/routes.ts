@@ -58,7 +58,7 @@ export const Routes = {
   BlogPage: {
     key: 'BlogPage',
     url: '/fromCMS',
-    title: 'エンジニアブログ',
+    title: '看護師ブログ',
   },
 } as const;
 
