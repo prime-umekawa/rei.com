@@ -136,13 +136,13 @@ const Header: React.FC<HeaderProps> = ({ loginFlag }) => {
                   新規登録
                 </Link>
               )}
-              {loginFlag && (
-                <form method="post" action="/logout">
+              {/* {loginFlag && (
+                <form method="post" action="/">
                   <button className="self-center rounded bg-red-400 px-4 py-3 text-white">
                     ログアウト
                   </button>
                 </form>
-              )}
+              )} */}
             </div>
           </nav>
         </div>
